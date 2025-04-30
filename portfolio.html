@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic Metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personnel Portfolio</title>
-    <link rel="stylesheet" href="./portfolio.css" />
-
-    <script
-      src="https://kit.fontawesome.com/d035df5c08.js"
-      crossorigin="anonymous"
-    ></script>
-
+    <title>Navin Subramanian | Fullstack Developer Portfolio</title>
+    <meta name="description" content="Explore the portfolio of Navin Subramanian, a fullstack developer skilled in React, Node.js, Django, and cloud deployment. View projects, skills, and professional experience." />
+    <meta name="keywords" content="Navin Subramanian, Navin's portofolio, Navin Subramanian Portfolio, Developer Portfolio, Neat Portfolio, Fullstack Developer, Web Developer, React, Node.js, Django, Software Engineer, Portfolio, Chennai Developer, Freelancing, Startup" />
+    <meta name="author" content="Navin Subramanian" />
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo482.png" />
+  
+    <!-- Open Graph (for social media previews) -->
+    <meta property="og:title" content="Navin Subramanian | Fullstack Developer Portfolio" />
+    <meta property="og:description" content="Fullstack developer experienced in React, Node.js, Django, and scalable deployments. Check out my work and background." />
+    <meta property="og:image" content="https://nnavin.vercel.app/images/main.png" />
+    <meta property="og:url" content="https://nnavin.vercel.app/" />
+    <meta property="og:type" content="website" />
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Navin Subramanian | Fullstack Developer Portfolio" />
+    <meta name="twitter:description" content="Explore Navin's web development projects, skills, and experience." />
+    <meta name="twitter:image" content="https://nnavin.vercel.app/images/main.png" />
+  
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nnavin.vercel.app/" />
+  
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d035df5c08.js" crossorigin="anonymous"></script>
+  
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+  
+    <!-- Styles -->
+    <link rel="stylesheet" href="./portfolio.css" />
   </head>
+  
+  
   <body>
     <div class="hamburger" onclick="toggleSidebar()">
       <i class="fa fa-bars"></i>
     </div>
+
     <div class="sidebar">
       <div class="personalInfo">
-        <img src="./Images/pfp.png" alt="">
+        <img src="./Images/pfp.png" alt="" />
         <h3>N Navin Subramanian</h3>
         <p>Front-End Developer</p>
       </div>
       <div class="socialIcons">
-        <a href="https://www.instagram.com/n._.navin?igsh=MTFsZ2R5dG83d3l0Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/nnavinsub/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/NavinSubramanian" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/nnavinsub/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a
+          href="https://www.instagram.com/n._.navin?igsh=MTFsZ2R5dG83d3l0Mg=="
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/nnavinsub/" target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/NavinSubramanian" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/nnavinsub/" target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
       </div>
-      <hr>
+      <hr />
       <div class="moreInfo">
         <div>
           <p>Age:</p>
-          <p>21</p>
+          <p>22</p>
         </div>
         <div>
           <p>Residence:</p>
@@ -46,10 +83,10 @@
         </div>
         <div>
           <p>Freelance:</p>
-          <p style="color: green;">Available</p>
+          <p style="color: green">Available</p>
         </div>
       </div>
-      <hr>
+      <hr />
     </div>
 
     <div class="main-content">
@@ -79,27 +116,68 @@
         </p>
       </section>
 
-      <section id="education">
-        <h2>Education</h2>
-        <div class="educationTimeline">
-          <div class="educationItem">
-            <div class="educationContent">
-              <h3>Higher Secondary Education</h3>
-              <p class="education-institution">T.I Matriculation Higher Secondary School</p>
-              <p class="education-duration">Till 2021</p>
-              <p class="education-description">
-                Focused on science and mathematics with a specialization in computer applications in my 10th 12th.
-              </p>
+      <section id="qualifications">
+        <div class="tab-header">
+          <button class="tab-button active" onclick="switchTab('experience')">
+            Experience
+          </button>
+          <button class="tab-button" onclick="switchTab('education')">
+            Education
+          </button>
+        </div>
+
+        <div id="education" class="tab-content">
+          <div class="educationTimeline">
+            <div class="educationItem">
+              <div class="educationContent">
+                <h3>Higher Secondary Education</h3>
+                <p class="education-institution">
+                  T.I Matriculation Higher Secondary School
+                </p>
+                <p class="education-duration">Till 2021</p>
+                <p class="education-description">
+                  Focused on science and mathematics with a specialization in
+                  computer applications in my 10th & 12th.
+                </p>
+              </div>
+            </div>
+            <div class="educationItem">
+              <div class="educationContent">
+                <h3>Bachelor of Technology in Computer Science</h3>
+                <p class="education-institution">
+                  Chennai Institute of Technology
+                </p>
+                <p class="education-duration">2021 - 2025</p>
+                <p class="education-description">
+                  Learned core concepts of computer science, software
+                  engineering, and web development.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="educationItem">
-            <div class="educationContent">
-              <h3>Bachelor of Technology in Computer Science</h3>
-              <p class="education-institution">Chennai Institute of Technology</p>
-              <p class="education-duration">2021 - 2025</p>
-              <p class="education-description">
-                Learned core concepts of computer science, software engineering, and web development.
-              </p>
+        </div>
+
+        <div id="experience" class="tab-content active">
+          <div class="educationTimeline">
+            <div class="educationItem">
+              <div class="educationContent">
+                <h3>Fullstack Developer</h3>
+                <p class="education-institution">Flanzer Startup</p>
+                <p class="education-duration">Jun 2023 - Dec 2024</p>
+                <p class="education-description">
+                  <li>Delivered 5 client projects end-to-end, handling requirements, full-stack development, and deployment on VPS.</li><li>Worked closely with clients to tailor solutions and provide training. </li> <li>Led the entire SDLC with a focus on performance, SEO, and maintainability.</li>
+                </p>
+              </div>
+            </div>
+            <div class="educationItem">
+              <div class="educationContent">
+                <h3>Fullstack Developer</h3>
+                <p class="education-institution">Wordline Global Services</p>
+                <p class="education-duration">On-going</p>
+                <p class="education-description">
+                  <li>Participated in Worldline's structured pre-employment training program after receiving an official offer, focusing on corporatelevel fullstack development practices and project methodologies.</li> <li>Gained exposure to industry-standard tools and workflows aligned with Worldline's global software delivery practices.</li>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -110,59 +188,7 @@
           <h2>My <span>Skills</span></h2>
           <p>Here is why you should contact me!</p>
         </div>
-        <div class="skillbranchmain">
-          <div>
-            <img src="./Images/logos/java.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/git.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/python2.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/wordpress.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/docker.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/django.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/express.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/nodejs.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/tailwind.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/sass.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/react.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/javascript.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/css.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/html.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/figma.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/aws.png" alt="" />
-          </div>
-          <div>
-            <img src="./Images/logos/c++.png" alt="" />
-          </div>
-        </div>
+        <div class="skillbranchmain"></div>
         <div class="skillRight">
           <div class="content">
             <div>
@@ -211,63 +237,10 @@
             <button class="filter-btn active" data-category="all">All</button>
             <button class="filter-btn" data-category="website">Website</button>
             <button class="filter-btn" data-category="ui">Ui/Ux</button>
+            <button class="filter-btn" data-category="extensions">Chrome Extensions</button>
           </div>
 
           <div class="gallery">
-            <div class="project-card" data-category="website">
-              <img src="./Images/projects/scanhubgen.png" alt="">
-              <div class="project-info">
-                <h3>ScanHubGen</h3>
-                <p>Generate Emergency QR to placed on accessories.</p>
-                <div class="project-links">
-                  <a href="https://scanhubgenweb.vercel.app/" target="_blank">Live Demo</a>
-                  <a href="https://github.com/NavinSubramanian/Scanhubgen" target="_blank">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="project-card" data-category="website">
-              <img src="./Images/projects/geetha.png" alt="">
-              <div class="project-info">
-                <h3>Geetha Jewellers</h3>
-                <p>Jewellery display website for Geetha Jewellers.</p>
-                <div class="project-links">
-                  <a href="https://www.geethajewellers.in/" target="_blank">Live Demo</a>
-                  <a href="https://github.com/NavinSubramanian/Jewel" target="_blank">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="project-card" data-category="website">
-              <img src="./Images/projects/shivin.png" alt="">
-              <div class="project-info">
-                <h3>Courses Website</h3>
-                <p>Made as a project in the startup.</p>
-                <div class="project-links">
-                  <a href="https://shivin-tech.vercel.app/" target="_blank">Live Demo</a>
-                  <a href="https://github.com/NavinSubramanian/Shivin_Tech" target="_blank">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="project-card" data-category="website">
-              <img src="./Images/projects/staffalloc.png" alt="">
-              <div class="project-info">
-                <h3>Staff Allocation</h3>
-                <p>Allocate staffs to various classroom. Used by our college.</p>
-                <div class="project-links">
-                  <a href="https://staffalloc.onrender.com/" target="_blank">Live Demo</a>
-                  <a href="https://github.com/NavinSubramanian/StaffallocServer" target="_blank">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="project-card" data-category="ui">
-              <img src="./Images/projects/foundit.png" alt="">
-              <div class="project-info">
-                <h3>Foundit - UI redesign</h3>
-                <p>This was my first redesign contest.</p>
-                <div class="project-links">
-                  <a href="https://www.behance.net/gallery/180377363/Foundit-website-UI-Redesign-contest" target="_blank">Behance Page</a>
-                </div>
-              </div>
-            </div>
             <div id="warningTag"></div>
           </div>
         </div>
@@ -276,7 +249,7 @@
       <section id="contact">
         <h2>Contact</h2>
         <p><b>Email</b> : nnavinsubramanian@gmail.com</p>
-        <p><b>Phone</b> : +91 7904262162</p>
+        <p><b>Phone</b> : +91 9003060042</p>
         <p><b>Country</b> : TamilNadu, India</p>
       </section>
 
@@ -292,8 +265,8 @@
           <i class="fa-solid fa-house"></i>
         </abbr>
       </a>
-      <a href="#education">
-        <abbr title="Education">
+      <a href="#qualifications">
+        <abbr title="qualifications">
           <i class="fa-solid fa-user-graduate"></i>
         </abbr>
       </a>
@@ -314,7 +287,99 @@
       </a>
     </div>
 
-    <script src="./portfolio.js"></script>
+    <script src="./objects.js"></script>
 
+    <!-- To load the skillbranch div -->
+    <script>
+      const skills = document.querySelector('.skillbranchmain')
+      
+      skillData.forEach((skill)=>{
+        const newdiv = document.createElement("div");
+        newdiv.innerHTML = `<img src='${skill.link}'></img>`
+        skills.appendChild(newdiv); 
+      })
+    </script>
+
+    <!-- To make the qualifications tab switching -->
+    <script>
+        function switchTab(tabId) {
+          document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.classList.remove('active');
+          });
+          document.querySelectorAll('.tab-button').forEach(btn => {
+            btn.classList.remove('active');
+          });
+          document.getElementById(tabId).classList.add('active');
+          event.target.classList.add('active');
+        }      
+    </script>
+
+    <!-- To make the project section load -->
+    <script>
+      const gallery = document.querySelector(".gallery");
+
+      projectData.forEach((project) => {
+        const projectCard = document.createElement("div");
+        projectCard.classList.add("project-card");
+        projectCard.setAttribute("data-category", project.category);
+
+        projectCard.innerHTML = `
+      <img src="${project.image}" alt="${project.name}">
+      <div class="project-info">
+        <h3>${project.name}</h3>
+        <p>${project.description}</p>
+        <div class="project-links">
+          ${project.links
+            .map(
+              (link) => `<a href="${link.url}" target="_blank">${link.text}</a>`
+            )
+            .join("")}
+        </div>
+      </div>
+    `;
+
+        gallery.appendChild(projectCard);
+      });
+
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const projects = document.querySelectorAll(".project-card");
+      const warning = document.getElementById("warningTag");
+      warning.style.display = "none";
+
+      console.log(projects);
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterButtons.forEach((button) => button.classList.remove("active"));
+
+          btn.classList.add("active");
+
+          const category = btn.getAttribute("data-category");
+          let count = 0;
+          projects.forEach((project) => {
+            const projectCategory = project.getAttribute("data-category");
+
+            if (category === "all" || projectCategory === category) {
+              project.style.display = "block";
+              count++;
+            } else {
+              project.style.display = "none";
+            }
+          });
+          if (count === 0) {
+            warning.textContent = "No Projects present currently";
+            warning.style.display = "block";
+          } else {
+            warning.textContent = "";
+            warning.style.display = "none";
+          }
+        });
+      });
+
+      function toggleSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

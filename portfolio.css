@@ -489,7 +489,7 @@ body {
   margin-bottom: 12px;
 }
 
-.education-description {
+.education-description, .educationContent>li {
   font-size: 14px;
   color: #555;
   line-height: 1.6;
@@ -514,6 +514,39 @@ body {
         width: 15% !important;
     }
 }
+
+
+.tab-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.tab-button {
+  padding: 5px;
+  border: none;
+  font-size: 1.2em;
+  background: #eee;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.tab-button.active {
+  background-color: #ffb400;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
 
 /* Right Navbar */
 
